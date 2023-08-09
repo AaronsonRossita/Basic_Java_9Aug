@@ -106,7 +106,7 @@ public class Main {
 //        System.out.println(myLocalDateTime);
 //        System.out.println(myLocalDateTime2);
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MMM/yy hh:mm E");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MMM/yy hh:mm a E");
         System.out.println(myLocalDateTime2);
         System.out.println(myLocalDateTime2.format(formatter));
 
