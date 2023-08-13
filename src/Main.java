@@ -82,6 +82,19 @@ public class Main {
 
         int random = (int)(Math.random() * 10) + 1;
 
+        int random1 = (int)(Math.random()*5) + 1;
+        int random2 = (int)(Math.random()*5) + 1;
+        String equal = String.format("The numbers are equals with value: %s",random1);
+        String notEqual = String.format("The numbers are not equals, first number value is: %s, and second number value is: %s",random1,random2);
+
+        if (random1 == random2){
+            System.out.println(equal);
+        }else{
+            System.out.println(notEqual);
+        }
+
+        System.out.println((random1 == random2) ? equal : notEqual);
+
         LocalDate localDateNow = LocalDate.now();
         LocalTime localTimeNow = LocalTime.now();
         LocalDateTime localDateTimeNow = LocalDateTime.now();
